@@ -1,5 +1,5 @@
-const ProductHuntBadges = () => {
-  const productHuntURL = 'https://www.producthunt.com/products/regexlearn';
+const TES = () => {
+  const productHuntURL = '';
   return (
     <div className="flex gap-3">
       <a href={productHuntURL} target="_blank" rel="noreferrer" aria-label="Product of the Day">
@@ -30,4 +30,4 @@ const ProductHuntBadges = () => {
   );
 };
 
-export default ProductHuntBadges;
+export default ;

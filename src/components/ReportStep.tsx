@@ -35,7 +35,7 @@ const ReportStep = ({ title: stepTitle, step }: Props) => {
     <div className="cursor-default absolute -bottom-6 left-1 select-none">
       <a
         className="inline-flex items-center text-[10px] text-neutral-500 hover:text-green-400"
-        href={`https://github.com/aykutkardas/regexlearn.com/issues/new?title=${title}&body=${body}`}
+        href={`https://legaltechfaq.com/regex-tutorial/issues/new?title=${title}&body=${body}`}
         target="_blank"
         rel="noreferrer"
       >

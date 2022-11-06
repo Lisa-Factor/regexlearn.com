@@ -7,7 +7,6 @@ import InteractiveArea from 'src/components/InteractiveArea';
 import HighlightedText from 'src/components/HighlightedText';
 import Progress from 'src/components/Progress';
 import Button, { ButtonVariants } from 'src/components/Button';
-import SupportButton from 'src/components/SupportButton';
 import { InteractiveAreaContext } from 'src/context/InteractiveAreaContext';
 
 const Step = () => {
@@ -58,29 +57,12 @@ const Step = () => {
 
       {lessonData.length === step + 1 && (
         <div className="mx-auto mt-4 hover:scale-110 transition">
-          <a href="https://www.buymeacoffee.com/aykutkardas" target="_blank" rel="noreferrer">
-            <img
-              src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-              alt="Buy Me A Coffee"
-              style={{ height: 50, width: 217 }}
-            />
-          </a>
         </div>
       )}
 
       <InteractiveArea key={step} isShow={isInteractive} setIsOpenModal={setIsOpenModal} />
-      <a
-        className="text-xs inline-flex items-center justify-end text-neutral-300 opacity-70 hover:opacity-100 relative bottom-3 ml-auto mt-5"
-        href={lesson.sponsorURL || 'https://github.com/aykutkardas/regexlearn.com#sponsoring'}
-        target="_blank"
-        rel="noreferrer"
-      >
         {lesson.sponsor ? (
-          <span className="flex items-center">
-            Sponsored by <img className="mx-1 h-3" src={lesson.sponsorLogo} alt={lesson.sponsor} />
-          </span>
-        ) : (
-          <span>Become a Sponsor</span>
+         ) : (
         )}
       </a>
       {data.videoURL && modalIsOpen && (

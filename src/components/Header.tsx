@@ -69,18 +69,6 @@ const Header = ({ page }: Props) => {
             )}
           </IntlLink>
 
-          <a
-            href="https://github.com/aykutkardas/regexlearn.com"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub"
-            className={cx(
-              'text-neutral-200 hover:text-regreen-400',
-              'select-none relative items-baseline inline-flex justify-center',
-            )}
-          >
-            <Icon icon="github" size={18} />
-          </a>
           <LanguageSelect />
         </div>
       </div>

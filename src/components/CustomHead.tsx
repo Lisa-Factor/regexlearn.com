@@ -32,7 +32,7 @@ const CustomHead = ({ title, description, children, hrefLang }: CustomHeadProps)
             key={locale}
             rel="alternate"
             hrefLang={locale}
-            href={`https://regexlearn.com/${locale === 'en' ? '' : locale + '/'}${hrefLang}`}
+            href={`https://legaltech.com/regex-tutorial/${locale === 'en' ? '' : locale + '/'}${hrefLang}`}
           />
         ))}
       <SeoTags key={pageTitle} title={pageTitle} description={pageDescription} href={pageHref} />
